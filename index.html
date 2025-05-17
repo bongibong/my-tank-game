@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Battle - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="game-instructions">
+            <h2>Tank Battle</h2>
+            <p>Active Tank: <span id="active-tank-indicator" class="tank-indicator">1</span></p>
+            <p>Controls:</p>
+            <ul>
+                <li><strong>Arrow Left/Right:</strong> Aim active tank</li>
+                <li><strong>Hold Spacebar:</strong> Charge shot (release to fire)</li>
+                <li><strong>'T' key:</strong> Switch active tank</li>
+            </ul>
+            <div class="power-bar-container">
+                <p>Power:</p>
+                <div id="power-bar-fill"></div>
+            </div>
+        </div>
+            <div id="game-over-message" class="game-over-message" style="display: none;">
+              <h2 id="winner-text">Game Over!</h2>
+              <button id="restart-button">Play Again</button>
+            </div>
+        <div id="game-area" class="game-area">
+            <canvas id="terrain-canvas"></canvas>
+            <!-- Tanks and bullets will be added here by JavaScript -->
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
